@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon index.js"
+    "start": "npm install&&node index.js"
   },
   "keywords": [],
   "author": "",
@@ -22,5 +22,8 @@
     "passport-google-oauth20": "^2.0.0",
     "passport-instagram": "^1.0.0",
     "passport-twitter": "^1.0.4"
+  },
+  "engines": {
+    "node": "v18.x"
   }
 }

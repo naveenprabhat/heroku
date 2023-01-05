@@ -29,11 +29,13 @@ app.use(cors({
 
 app.use("/api/auth", authRoute)
 
+app.use(express.static(path.join(__dirname,"./build")))
+
 app.get("*",(req,res)=>{
     res.sendFile(path.resolve(__dirname,"./build/index.html"))
 })
 
-app.listen("5000",()=>{
+app.listen("3000",()=>{
     console.log("Server is running...")
 })
 
